@@ -1,54 +1,12 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
 
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-
 body {
     margin: 0;
 }
-
-/**
- * Render the `main` element consistently in IE.
- */
-
-main {
-    display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 
 hr {
     box-sizing: content-box; /* 1 */
@@ -56,141 +14,34 @@ hr {
     overflow: visible; /* 2 */
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-    background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
 abbr[title] {
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
 }
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 
 b,
 strong {
     font-weight: bolder;
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
 small {
     font-size: 80%;
 }
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-sup {
-    top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
 
 img {
     border-style: none;
 }
 
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
 
 button,
 input { /* 1 */
     overflow: visible;
 }
 
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
 button,
 select { /* 1 */
     text-transform: none;
 }
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
 
 button,
 [type="button"],
@@ -199,10 +50,6 @@ button,
     -webkit-appearance: button;
 }
 
-/**
- * Remove the inner border and padding in Firefox.
- */
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -210,32 +57,6 @@ button::-moz-focus-inner,
     border-style: none;
     padding: 0;
 }
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-    padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
 
 legend {
     box-sizing: border-box; /* 1 */
@@ -246,26 +67,13 @@ legend {
     white-space: normal; /* 1 */
 }
 
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
 progress {
     vertical-align: baseline;
 }
 
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
 textarea {
     overflow: auto;
 }
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
 
 [type="checkbox"],
 [type="radio"] {
@@ -273,79 +81,41 @@ textarea {
     padding: 0; /* 2 */
 }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
 
 [type="search"] {
     -webkit-appearance: textfield; /* 1 */
     outline-offset: -2px; /* 2 */
 }
 
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
 
 ::-webkit-file-upload-button {
     -webkit-appearance: button; /* 1 */
     font: inherit; /* 2 */
 }
 
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-    display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
 
 summary {
     display: list-item;
 }
 
-/* Misc
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
 template {
     display: none;
 }
 
-/**
- * Add the correct display in IE 10.
- */
-
 [hidden] {
     display: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 img {
@@ -367,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .karkas {
     max-width: 1200px;
-    min-width: 980px;
+    min-width: 200px;
     margin: 0 auto;
 }
 
@@ -399,9 +169,821 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
 }
 
+.content-wrapper {
+    background: #ffffff;
+}
 
+.menu {
+    background: #e9e7e3;
+}
 
+.menu ul {
+    overflow: hidden;
+    padding: 30px;
+    list-style: none;
+    font: bold 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #777575;
+    padding: 5px 20px;
+    display: block;
+    border: 1px solid #e9e7e3;
+
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu ul li.active a {
+    background: #f45300;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #c84502;
+}
+
+.menu a#pull {
+    display: none;
+}
+
+.content-main {
+    background: #fff;
+    padding: 30px 30px 0 30px;
+}
+
+.slogan-main {
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.slogan {
+    float: left;
+    width: 33%;
+}
+
+.slogan div {
+    padding-right: 30px;
+}
+
+.slogan div h2 {
+    font-size: 13px;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+
+.slogan div h2 img {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.features {
+    margin-bottom: 30px;
+}
+
+.features img {
+    width: 100%;
+}
+
+.service-main {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.service {
+    width: 25%;
+    float: left;
+}
+
+.service div {
+    padding-right: 30px;
+}
+
+.service div h2 {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.service div p {
+    margin-bottom: 20px;
+}
+
+.work-with-us {
+    background: #fcfaf4;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.work-with-us h2 {
+    width: 62%;
+    float: left;
+    font-size: 18px;
+    color: #706d6a;
+    line-height: 1.6;
+}
+
+.work-with-us a {
+    width: 38%;
+    float: right;
+}
+
+.work-with-us a img {
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom-content-block {
+    padding: 30px 30px 30px 30px;
+}
+
+.bottom-content-block::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bottom-content-left {
+    float: left;
+    width: 66%;
+}
+
+.review {
+    float: right;
+    width: 43%;
+    margin-right: 7%;
+}
+
+.review-head {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.review-head img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.review-head h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.review-head p {
+    font-size: 10px;
+    color: #f67645;
+}
+
+.review-content {
+    font-size: 12px;
+    line-height: 2;
+    width: 245px;
+    height: 100px;
+}
+
+.bottom-content-right {
+    float: right;
+    width: 34%;
+}
+
+.news-block {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.news-block img {
+    float: left;
+    margin-right: 15px;
+}
+
+.news-block h3 {
+    font-size: 13px;
+}
+
+.news-block h3 a {
+    color: #343233;
+    text-decoration: none;
+}
+
+.news-block h3 a:hover {
+    text-decoration: underline;
+}
+
+.news-block p {
+    color: #adadad;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.news-block p span {
+    color: #f55909;
+    font-size: 10px;
+    padding-left: 70px;
+}
+
+.footer-main {
+    background: #4a4744;
+    padding: 40px 30px 30px 30px;
+    color: #848484;
+    line-height: 1.5;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.footer-main a {
+    color: #f7f5ee;
+    text-decoration: none;
+}
+
+.footer-main a:hover {
+    text-decoration: underline;
+}
+
+.footer-main h3 {
+    font-size: 13px;
+    color: #f7f5ee;
+    margin-bottom: 15px;
+}
+
+.footer-block-left {
+    float: left;
+    width: 60%;
+    margin-right: 6%;
+}
+
+.footer-block-right {
+    float: right;
+    width: 34%;
+}
+
+.footer-block-right ul {
+    list-style: none;
+}
+
+.footer-block-right ul li {
+    margin-bottom: 5px;
+}
+
+.footer-copy {
+    background: #3b3836;
+    overflow: hidden;
+    padding: 20px 30px;
+}
+
+.footer-copy img {
+    float: left;
+}
+
+.footer-copy p {
+    float: right;
+    margin: 0;
+    color: #615f5f;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+    .service {
+        width: 50%;
+    }
+
+    .work-with-us h2 {
+        width: 100%;
+        float: none;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .work-with-us a {
+        float: none;
+    }
+
+    .work-with-us img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .service {
+        width: 50%;
+    }
+
+    .work-with-us h2 {
+        width: 100%;
+        float: none;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .work-with-us a {
+        float: none;
+    }
+
+    .work-with-us img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .head {
+        padding: 10px 30px 30px 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .logo {
+        display: block;
+        float: none;
+        margin: 25px auto 0 auto;
+    }
+
+    .head h1 {
+        float: none;
+        text-align: center;
+        font-size: 15px;
+        color: #939393;
+        margin: 20px 0 0 0;
+    }
+
+    .head p {
+        float: none;
+        overflow: hidden;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    .head p img {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .bottom-content-left {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content-right {
+        float: none;
+        width: 100%;
+    }
+
+    .news-block {
+        overflow: hidden;
+        margin-bottom: 20px;
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu a#pull {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2e2c2d;
+        text-decoration: none;
+        padding: 10px 3%;
+        width: 94%;
+        position: relative;
+    }
+
+    .menu a#pull:after {
+        content: "";
+        background: url("img/icon-menu.png") no-repeat;
+        width: 12px;
+        height: 13px;
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        right: 3%;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .slogan {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .service {
+        width: 50%;
+    }
+
+    .work-with-us h2 {
+        width: 100%;
+        float: none;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .work-with-us a {
+        float: none;
+    }
+
+    .work-with-us img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .head {
+        padding: 10px 30px 30px 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .logo {
+        display: block;
+        float: none;
+        margin: 25px auto 0 auto;
+    }
+
+    .head h1 {
+        float: none;
+        text-align: center;
+        font-size: 15px;
+        color: #939393;
+        margin: 20px 0 0 0;
+    }
+
+    .head p {
+        float: none;
+        overflow: hidden;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    .head p img {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .bottom-content-left {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content-right {
+        float: none;
+        width: 100%;
+    }
+
+    .news-block p span {
+        padding-left: 0;
+    }
+
+    .news-block {
+        overflow: hidden;
+        margin-bottom: 20px;
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .menu a#pull {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2e2c2d;
+        text-decoration: none;
+        padding: 10px 3%;
+        width: 94%;
+        position: relative;
+    }
+
+    .menu a#pull:after {
+        content: "";
+        background: url("img/icon-menu.png") no-repeat;
+        width: 12px;
+        height: 13px;
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        right: 3%;
+    }
+
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+    .slogan {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .slogan div {
+        padding-right: 0;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service div {
+        padding-right: 0;
+    }
+
+    .work-with-us h2 {
+        width: 100%;
+        float: none;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .work-with-us a {
+        float: none;
+    }
+
+    .work-with-us img {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+
+    .head {
+        padding: 10px 0px 15px 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .logo {
+        display: block;
+        float: none;
+        margin: 0px auto 0 auto;
+        width: 100px;
+    }
+
+    .head h1 {
+        display: none;
+    }
+
+    .head p {
+        display: none;
+    }
+
+    .bottom-content-left {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .review {
+        float: none;
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content-right {
+        float: none;
+        width: 100%;
+    }
+
+    .news-block p span {
+        padding-left: 0;
+    }
+
+    .news-block {
+        overflow: hidden;
+        margin-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+
+    .footer-block-left {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-block-right {
+        float: none;
+        width: 100%;
+    }
+
+    .footer-copy img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .footer-copy p {
+        float: none;
+        color: #615f5f;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu ul li {
+        width: 100%;
+    }
+
+    .menu a#pull {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2e2c2d;
+        text-decoration: none;
+        padding: 10px 3%;
+        width: 94%;
+        position: relative;
+    }
+
+    .menu a#pull:after {
+        content: "";
+        background: url("img/icon-menu.png") no-repeat;
+        width: 12px;
+        height: 13px;
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        right: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 240px) {
+
+    .content-main {
+        padding: 0 10px;
+    }
+
+    .slogan {
+        padding-top: 10px;
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .slogan div {
+        padding-right: 0;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service div {
+        padding-right: 0;
+    }
+
+    .work-with-us h2 {
+        width: 100%;
+        float: none;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .work-with-us a {
+        float: none;
+    }
+
+    .work-with-us img {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+
+    .head {
+        padding: 10px 0px 15px 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .logo {
+        display: block;
+        float: none;
+        margin: 0px auto 0 auto;
+        width: 100px;
+    }
+
+    .head h1 {
+        display: none;
+    }
+
+    .head p {
+        display: none;
+    }
+
+    .bottom-content-left {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .review {
+        float: none;
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content-right {
+        float: none;
+        width: 100%;
+    }
+
+    .news-block p span {
+        padding-left: 0;
+    }
+
+    .news-block {
+        overflow: hidden;
+        margin-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+
+    .footer-block-left {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-block-right {
+        float: none;
+        width: 100%;
+    }
+
+    .footer-copy img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .footer-copy p {
+        float: none;
+        color: #615f5f;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer-main {
+        padding: 40px 10px 30px 10px;
+    }
+
+    .footer-copy {
+        background: #3b3836;
+        overflow: hidden;
+        padding: 20px 10px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu ul li {
+        width: 100%;
+    }
+
+    .menu a#pull {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2e2c2d;
+        text-decoration: none;
+        padding: 10px 3%;
+        width: 94%;
+        position: relative;
+    }
+
+    .menu a#pull:after {
+        content: "";
+        background: url("img/icon-menu.png") no-repeat;
+        width: 12px;
+        height: 13px;
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        right: 3%;
+    }
+}
 
 
 

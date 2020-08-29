@@ -2,6 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script>
+        $(function () {
+            var pull         = $("#pull");
+                menu         = $(".menu ul");
+                menuHeight   = menu.height();
+
+            $(pull).on("click", function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function () {
+                var w = $(window).width();
+                if(w > 320 && menu.is(":hidden")) {
+                    menu.removeAttr("style");
+                }
+            });
+        })
+    </script>
     <title>Appix - Home page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -21,6 +43,316 @@
             </a>
         </p>
     </div>
+
+    <div class="content-wrapper">
+        <div class="menu">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Shortcodes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <a href="#" id="pull">
+                Меню
+            </a>
+        </div>
+    </div>
+
+    <div class="content-main">
+        <div class="slogan-main">
+            <div class="slogan">
+                <div>
+                    <h2>
+                        <img src="img/ico-pic1.gif" alt="">
+                        Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit
+                    </h2>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste
+                        natus error sit voluptatem accusantium.
+                    </p>
+                </div>
+            </div>
+            <div class="slogan">
+                <div>
+                    <h2>
+                        <img src="img/ico-pic2.gif" alt="">
+                        Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit voluptatem unde
+                    </h2>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste
+                        natus error sit voluptatem accusantium.
+                    </p>
+                </div>
+            </div>
+            <div class="slogan">
+                <div>
+                    <h2>
+                        <img src="img/ico-pic2.gif" alt="">
+                        Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit voluptatem unde
+                    </h2>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste
+                        natus error sit voluptatem accusantium.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <img src="http://lorempixel.com/900/250/city/" alt="">
+        </div>
+        <div class="service-main">
+            <div class="service">
+                <div>
+                    <h2>
+                        Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit
+                    </h2>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium. Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium.
+                    </p>
+                    <p>
+                        <img src="img/read-more-orang.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <div>
+                    <h2>
+                        Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit
+                    </h2>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium. Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium.
+                    </p>
+                    <p>
+                        <img src="img/read-more-grey.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <div>
+                    <h2>
+                        Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit
+                    </h2>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium. Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium.
+                    </p>
+                    <p>
+                        <img src="img/read-more-orang.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <div>
+                    <h2>
+                        Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit
+                    </h2>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium. Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium.
+                    </p>
+                    <p>
+                        <img src="img/read-more-grey.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="work-with-us">
+            <h2>
+                Dolor sit amet, consectetur adipisicing elit, sed do elis. Lorem
+                ipsum dolor sit amet, elit, sed do ipsum dolor...
+            </h2>
+            <a href="#">
+                <img src="img/work-btn.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="bottom-content-block">
+        <div class="bottom-content-left">
+            <h2>
+                CUSTOMERS TESTIMONIALS
+            </h2>
+            <div class="review">
+                <div class="review-head">
+                    <img src="http://lorempixel.com/78/78/city/" alt="">
+                    <h3>
+                        John Smith
+                    </h3>
+                    <p>
+                        App Designer
+                    </p>
+                </div>
+                <p class="review-content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, atis et quasi architecto beatae
+                    vitae dicta sunt explicabo atis et quasi archite.”
+                </p>
+            </div>
+            <div class="review">
+                <div class="review-head">
+                    <img src="http://lorempixel.com/78/78/city/" alt="">
+                    <h3>
+                        John Smith
+                    </h3>
+                    <p>
+                        App Designer
+                    </p>
+                </div>
+                <p class="review-content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, atis et quasi architecto beatae
+                    vitae dicta sunt explicabo atis et quasi archite.”
+                </p>
+            </div>
+        </div>
+        <div class="bottom-content-right">
+            <h2>
+                LATEST NEWS FROM APPIX BLOG
+            </h2>
+            <div class="news-block">
+                <a href="#">
+                    <img src="img/news-img.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">
+                        Lorem Ipsum Dolor Sit Amet
+                    </a>
+                </h3>
+                <p>
+                    March, 28th 2011<br>
+                    <span>
+                        Written by Eric
+                    </span>
+                </p>
+            </div>
+            <div class="news-block">
+                <a href="#">
+                    <img src="img/news-img.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">
+                        Lorem Ipsum Dolor Sit Amet
+                    </a>
+                </h3>
+                <p>
+                    March, 28th 2011<br>
+                    <span>
+                        Written by Christine
+                    </span>
+                </p>
+            </div>
+            <div class="news-block">
+                <a href="#">
+                    <img src="img/news-img.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">
+                        Lorem Ipsum Dolor Sit Amet
+                    </a>
+                </h3>
+                <p>
+                    March, 28th 2011<br>
+                    <span>
+                        Written by Eric
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="footer-block-left">
+            <h3>
+                Lorem Ipsum Dolir Sit
+            </h3>
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                <a href="#">
+                    incididunt ut labore
+                </a>
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation. Gorgeous design with time and attention dedicated to o laboris nisi
+                ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+            </p>
+        </div>
+        <div class="footer-block-right">
+            <h3>
+                Latest news from Appix Blog
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        Sed ut perspiciatis unde omnis iste
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        natus error sit voluptatem accusantium
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        psum dolor sit amet, consectetur
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        adipisicing elit, sed do eiusmod tempor
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        ncididunt ut labore et dolore magna
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <a href="#">
+            <img src="img/logo-footer.jpg" alt="">
+        </a>
+        <p>
+            &copy; 2011 Appix. All Rights Reserved. Powered by WordPress
+        </p>
+    </div>
+
+
 </div>
 
 
